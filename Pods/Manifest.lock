@@ -1,0 +1,16 @@
+PODS:
+  - IBAnimatable (5.2.1)
+
+DEPENDENCIES:
+  - IBAnimatable (= 5.2.1)
+
+SPEC REPOS:
+  trunk:
+    - IBAnimatable
+
+SPEC CHECKSUMS:
+  IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
+
+PODFILE CHECKSUM: d1b957563af6954e34bc6f6c98af44222a02efb1
+
+COCOAPODS: 1.8.4
