@@ -35,27 +35,24 @@
                                     <segue destination="3z2-LM-pU1" kind="show" id="Hxs-Sx-aFW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fma-mK-Yfe" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="19" y="309" width="336" height="48"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="R5N-TY-BHY"/>
-                                </constraints>
-                                <state key="normal" title="بحث و استعلام عن معاملات المناديب">
-                                    <color key="titleColor" red="0.054901960780000002" green="0.7725490196" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtl-4F-XeS">
+                                <rect key="frame" x="15" y="54" width="42" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="خروج">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chJ-wD-mZ0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.054901960780000002" green="0.7725490196" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Xtl-4F-XeS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="8k1-oM-7QO"/>
                             <constraint firstItem="kVd-0b-CYl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WVi-L1-vmF"/>
                             <constraint firstItem="kVd-0b-CYl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iqY-dU-0ws"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kVd-0b-CYl" secondAttribute="trailing" constant="20" id="ix0-FT-moC"/>
+                            <constraint firstItem="Xtl-4F-XeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="mPA-CZ-NMq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="2343.1999999999998" y="239.73013493253376"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="23n-z0-bEm">
             <objects>
-                <viewController interfaceStyle="light" id="nN2-w9-XaM" customClass="ViewController" customModule="Info_Query" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="nN2-w9-XaM" customClass="SignInViewController" customModule="Info_Query" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QpP-yv-wN1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +141,6 @@
                         <viewLayoutGuide key="safeArea" id="nvz-Vt-a1u"/>
                     </view>
                     <navigationItem key="navigationItem" id="aLA-S1-To8"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNQ-jN-0Bs" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,15 +155,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nbg-Co-2jG">
-                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="بحث عن معاملات" translatesAutoresizingMaskIntoConstraints="NO" id="yKM-st-FPt">
-                                <rect key="frame" x="0.0" y="0.0" width="298" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="298" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atz-NL-XqY" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="298" y="0.0" width="77" height="56"/>
+                                <rect key="frame" x="298" y="44" width="77" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="2aK-Qh-TbZ"/>
                                     <constraint firstAttribute="height" constant="56" id="VQ9-ee-kKq"/>

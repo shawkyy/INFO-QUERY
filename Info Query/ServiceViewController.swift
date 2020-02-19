@@ -9,7 +9,16 @@
 import UIKit
 
 class ServiceViewController: UIViewController {
-  
+    @IBAction func logoutButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+  navigationController?.navigationBar.isHidden = true
+  }
+  override func viewWillDisappear(_ animated: Bool) {
+       navigationController?.navigationBar.isHidden = false
+  }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

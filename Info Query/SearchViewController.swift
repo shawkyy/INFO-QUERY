@@ -19,6 +19,7 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
         registerCell()
         searchTableView.reloadData()
     }
+  
     func registerCell(){
         searchTableView.register(UINib(nibName: "InfoCell", bundle: nil), forCellReuseIdentifier: "InfoCell")
        }
