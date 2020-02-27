@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		51D4D2743BB3E45D70C9D5CB /* Pods_Info_Query.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Query.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6907399823F569670093661C /* Info Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6907399823F569670093661C /* استعلام معاملات.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "استعلام معاملات.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6907399B23F569670093661C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6907399D23F569670093661C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		690739A023F569670093661C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		6907399923F569670093661C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6907399823F569670093661C /* Info Query.app */,
+				6907399823F569670093661C /* استعلام معاملات.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 			);
 			name = "Info Query";
 			productName = "Info Query";
-			productReference = 6907399823F569670093661C /* Info Query.app */;
+			productReference = 6907399823F569670093661C /* استعلام معاملات.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -408,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.informationquery.Info-Query";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "استعلام معاملات";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,7 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.informationquery.Info-Query";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "استعلام معاملات";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
