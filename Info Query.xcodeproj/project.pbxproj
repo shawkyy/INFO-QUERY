@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC531DB424CD3BE1A1BAA60 /* libPods-Info Query.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A74A1EE503EB67BEF5986F /* libPods-Info Query.a */; };
 		6907399C23F569670093661C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907399B23F569670093661C /* AppDelegate.swift */; };
 		6907399E23F569670093661C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907399D23F569670093661C /* SignInViewController.swift */; };
 		690739A123F569670093661C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6907399F23F569670093661C /* Main.storyboard */; };
@@ -20,11 +21,10 @@
 		69A53ABD23FB0B6A0002B1F2 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A53ABB23FB0B6A0002B1F2 /* InfoCell.swift */; };
 		69A53ABE23FB0B6A0002B1F2 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A53ABC23FB0B6A0002B1F2 /* InfoCell.xib */; };
 		69A53AC023FB178A0002B1F2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A53ABF23FB17890002B1F2 /* SearchViewController.swift */; };
-		C2F2184935AD0448421A4D63 /* Pods_Info_Query.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D4D2743BB3E45D70C9D5CB /* Pods_Info_Query.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		51D4D2743BB3E45D70C9D5CB /* Pods_Info_Query.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Query.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A74A1EE503EB67BEF5986F /* libPods-Info Query.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Info Query.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6907399823F569670093661C /* استعلام معاملات.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "استعلام معاملات.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6907399B23F569670093661C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6907399D23F569670093661C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2F2184935AD0448421A4D63 /* Pods_Info_Query.framework in Frameworks */,
+				2BC531DB424CD3BE1A1BAA60 /* libPods-Info Query.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 		B63C3ACC756D9BF9451F96B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51D4D2743BB3E45D70C9D5CB /* Pods_Info_Query.framework */,
+				68A74A1EE503EB67BEF5986F /* libPods-Info Query.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +139,6 @@
 				6907399423F569670093661C /* Sources */,
 				6907399523F569670093661C /* Frameworks */,
 				6907399623F569670093661C /* Resources */,
-				6ED155B1875080DC4E9BF498 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,23 +218,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6ED155B1875080DC4E9BF498 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Query/Pods-Info Query-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Query/Pods-Info Query-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Info Query/Pods-Info Query-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

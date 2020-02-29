@@ -1,4 +1,4 @@
-framework module IBAnimatable {
+module IBAnimatable {
   umbrella header "IBAnimatable-umbrella.h"
 
   export *

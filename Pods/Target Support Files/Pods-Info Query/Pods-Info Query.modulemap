@@ -1,4 +1,4 @@
-framework module Pods_Info_Query {
+module Pods_Info_Query {
   umbrella header "Pods-Info Query-umbrella.h"
 
   export *
