@@ -12,13 +12,13 @@
         <!--Service View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ServiceViewController" customModule="Info_Query" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ServiceViewController" customModule="استعلام_معاملات" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVd-0b-CYl" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="19" y="244" width="336" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVd-0b-CYl">
+                                <rect key="frame" x="20" y="308.5" width="335" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="SLF-qG-34x"/>
@@ -53,6 +53,7 @@
                             <constraint firstItem="kVd-0b-CYl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iqY-dU-0ws"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kVd-0b-CYl" secondAttribute="trailing" constant="20" id="ix0-FT-moC"/>
                             <constraint firstItem="Xtl-4F-XeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="mPA-CZ-NMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xtl-4F-XeS" secondAttribute="trailing" symbolic="YES" id="vEB-Q3-hcX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,7 +66,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="23n-z0-bEm">
             <objects>
-                <viewController interfaceStyle="light" id="nN2-w9-XaM" customClass="SignInViewController" customModule="Info_Query" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="nN2-w9-XaM" customClass="SignInViewController" customModule="استعلام_معاملات" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QpP-yv-wN1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +98,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LH-gW-2f3" customClass="AnimatableButton" customModule="IBAnimatable">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LH-gW-2f3">
                                 <rect key="frame" x="161.5" y="383" width="52" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
@@ -149,7 +150,7 @@
         <!--Search View Controller-->
         <scene sceneID="uQm-HF-k90">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="3z2-LM-pU1" customClass="SearchViewController" customModule="Info_Query" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="3z2-LM-pU1" customClass="SearchViewController" customModule="استعلام_معاملات" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M7Y-8G-ovf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,7 +163,7 @@
                                 <rect key="frame" x="0.0" y="44" width="298" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atz-NL-XqY" customClass="AnimatableButton" customModule="IBAnimatable">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atz-NL-XqY">
                                 <rect key="frame" x="298" y="44" width="77" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="2aK-Qh-TbZ"/>
@@ -231,7 +232,7 @@
         <!--Process Details View Controller-->
         <scene sceneID="cfY-Ea-RQ0">
             <objects>
-                <viewController storyboardIdentifier="ProcessDetailsViewController" id="bWO-yS-kO6" customClass="ProcessDetailsViewController" customModule="Info_Query" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProcessDetailsViewController" id="bWO-yS-kO6" customClass="ProcessDetailsViewController" customModule="استعلام_معاملات" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N24-5f-ML1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -437,7 +438,7 @@
         <!--ترتيب حسب-->
         <scene sceneID="dbr-3O-hfi">
             <objects>
-                <viewController title="ترتيب حسب" id="79U-GF-fkI" customClass="SortingViewController" customModule="Info_Query" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ترتيب حسب" id="79U-GF-fkI" customClass="SortingViewController" customModule="استعلام_معاملات" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rwP-nu-zbk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

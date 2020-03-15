@@ -1,16 +1,30 @@
 PODS:
-  - IBAnimatable (5.2.1)
+  - Alamofire (4.9.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (4.1.0)
+  - RxSwift (4.5.0)
 
 DEPENDENCIES:
-  - IBAnimatable (= 5.2.1)
+  - Moya/RxSwift
 
 SPEC REPOS:
   trunk:
-    - IBAnimatable
+    - Alamofire
+    - Moya
+    - Result
+    - RxSwift
 
 SPEC CHECKSUMS:
-  IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: d1b957563af6954e34bc6f6c98af44222a02efb1
+PODFILE CHECKSUM: 8254fbcec2a3dca83f7379d8bc2ca62d381a6843
 
 COCOAPODS: 1.8.4
