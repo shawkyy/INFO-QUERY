@@ -17,6 +17,7 @@
 		691F310B23FB444900E5921F /* collectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F310923FB444900E5921F /* collectionCellCollectionViewCell.swift */; };
 		691F310C23FB444900E5921F /* collectionCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691F310A23FB444900E5921F /* collectionCellCollectionViewCell.xib */; };
 		6923A59B240A88A40017222F /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6923A59A240A88A40017222F /* EndPoints.swift */; };
+		693F5ED9241E6A85009C2BC8 /* MoyaSignInDataSourceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F5ED8241E6A85009C2BC8 /* MoyaSignInDataSourceImplementation.swift */; };
 		698E970B2419848E00521198 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E970A2419848E00521198 /* APIs.swift */; };
 		698E970D24198D4900521198 /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E970C24198D4900521198 /* UseCases.swift */; };
 		698E970F24198E4300521198 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E970E24198E4300521198 /* SignInResponse.swift */; };
@@ -31,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0AB7B7B94E636A8913FFB39E /* Pods_Info_Query.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Query.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6907399823F569670093661C /* استعلام معاملات.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "استعلام معاملات.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6907399823F569670093661C /* Info Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6907399B23F569670093661C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6907399D23F569670093661C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		690739A023F569670093661C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		691F310923FB444900E5921F /* collectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		691F310A23FB444900E5921F /* collectionCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = collectionCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		6923A59A240A88A40017222F /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		693F5ED8241E6A85009C2BC8 /* MoyaSignInDataSourceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaSignInDataSourceImplementation.swift; sourceTree = "<group>"; };
 		698E970A2419848E00521198 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		698E970C24198D4900521198 /* UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
 		698E970E24198E4300521198 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
@@ -90,7 +92,7 @@
 		6907399923F569670093661C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6907399823F569670093661C /* استعلام معاملات.app */,
+				6907399823F569670093661C /* Info Query.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				698E970A2419848E00521198 /* APIs.swift */,
+				693F5ED8241E6A85009C2BC8 /* MoyaSignInDataSourceImplementation.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -205,7 +208,7 @@
 			);
 			name = "Info Query";
 			productName = "Info Query";
-			productReference = 6907399823F569670093661C /* استعلام معاملات.app */;
+			productReference = 6907399823F569670093661C /* Info Query.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -314,6 +317,7 @@
 				698E971424198F3100521198 /* SignInViewModel.swift in Sources */,
 				6907399C23F569670093661C /* AppDelegate.swift in Sources */,
 				69A53AB623FB05FC0002B1F2 /* ServiceViewController.swift in Sources */,
+				693F5ED9241E6A85009C2BC8 /* MoyaSignInDataSourceImplementation.swift in Sources */,
 				698E970B2419848E00521198 /* APIs.swift in Sources */,
 				698E971124198E8900521198 /* SignInDataSource .swift in Sources */,
 				691F310523FB30A700E5921F /* SortingViewController.swift in Sources */,
@@ -472,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.informationquery.Info-Query";
-				PRODUCT_NAME = "استعلام معاملات";
+				PRODUCT_NAME = "Info Query";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -492,7 +496,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.informationquery.Info-Query";
-				PRODUCT_NAME = "استعلام معاملات";
+				PRODUCT_NAME = "Info Query";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

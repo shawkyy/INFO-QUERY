@@ -124,6 +124,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="loginButtonPressed:" destination="nN2-w9-XaM" eventType="touchUpInside" id="3zu-Gq-g2c"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="8Ab-nD-RLj"/>
                                 </connections>
                             </button>
@@ -142,6 +143,10 @@
                         <viewLayoutGuide key="safeArea" id="nvz-Vt-a1u"/>
                     </view>
                     <navigationItem key="navigationItem" id="aLA-S1-To8"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="l4F-bZ-PPH" id="bNX-qT-wnj"/>
+                        <outlet property="passwordTextField" destination="rft-Be-DPO" id="Esg-Ob-gww"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNQ-jN-0Bs" sceneMemberID="firstResponder"/>
             </objects>

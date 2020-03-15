@@ -7,9 +7,18 @@
 //
 
 import UIKit
+import RxSwift
 
 class SignInViewController: UIViewController {
 
+    let viewModel = SignInViewModel()
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        viewModel.signIn(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+    }
+  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     navigationController?.navigationBar.isHidden = true
