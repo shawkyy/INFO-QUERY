@@ -6,6 +6,5 @@ target 'Info Query' do
   use_frameworks!
 
   pod 'Moya/RxSwift'
- 
-
+  
 end
