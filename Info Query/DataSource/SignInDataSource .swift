@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 
 protocol SignInDataSource {
-    func signIn(email:String,password:String)->Single<SignInResponse>
+    func signIn(email:String,password:String)->Single<String>
 }

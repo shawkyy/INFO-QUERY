@@ -11,7 +11,7 @@ import Moya
 
 extension SignInEndPoint: TargetType {
    
-    static let baseURLString = "https://reqres.in/"
+    static let baseURLString = "http://mskwapp-001-site1.btempurl.com/"
     
         var baseURL: URL {
             return URL(string: SignInEndPoint.baseURLString)!
@@ -19,13 +19,13 @@ extension SignInEndPoint: TargetType {
         
         var path: String {
             switch self {
-            case .signIn: return "api/login"
+            case .signIn: return "MSService2.asmx/GetData"
             }
         }
         
         var method: Moya.Method {
             switch self {
-            case.signIn: return .post
+            case.signIn: return .get
             }
         }
         
@@ -36,7 +36,9 @@ extension SignInEndPoint: TargetType {
         var task: Task {
             switch self {
             case .signIn(let name,let password):
-                return .requestParameters(parameters: ["email":name,"password":password], encoding: JSONEncoding.default)
+                return .requestParameters(parameters:
+                    ["strSQLs":"select userPassword from usersAcounts where userName = '\(name)'","strTable":"usersAcounts","strCol":"\(password)"]
+                    , encoding: JSONEncoding.default)
             }
         }
         

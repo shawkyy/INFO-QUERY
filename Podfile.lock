@@ -8,9 +8,11 @@ PODS:
     - RxSwift (~> 4.0)
   - Result (4.1.0)
   - RxSwift (4.5.0)
+  - SWXMLHash (5.0.1)
 
 DEPENDENCIES:
   - Moya/RxSwift
+  - SWXMLHash (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - Moya
     - Result
     - RxSwift
+    - SWXMLHash
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
 
-PODFILE CHECKSUM: db2c3590f164fcd437ae312985e702d84ccf9657
+PODFILE CHECKSUM: 7460d1e3d1f51fa8d9825a4f37ebd07dedc55ef8
 
 COCOAPODS: 1.8.4

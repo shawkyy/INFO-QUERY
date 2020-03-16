@@ -9,18 +9,20 @@
 import Foundation
 import RxSwift
 import Moya
+//import SWXMLHash
 
-class MoyaSignInDataSourceImplementation:SignInDataSource {
-   
+
+class MoyaSignInDataSourceImplementation: SignInDataSource {
     let provider = MoyaProvider<SignInEndPoint>()
 
-    func signIn(email: String, password: String) -> Single<SignInResponse> {
-        
+    func signIn(email: String, password: String) -> Single<String> {
         return provider.rx.request(SignInEndPoint.signIn(email, password)).map({
             response in
             
-            let data = try JSONDecoder().decode(SignInResponse.self, from: response.data)
-            return data
+            // h3ml 7aga zy l try 3shan lw 7asal fail my7slsh crash 
+        //use swxmlhash here to parse from data to string
+            let data = response.data as! String
+            return data // zy 123
         })
     }
 }

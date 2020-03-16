@@ -6,5 +6,7 @@ target 'Info Query' do
   use_frameworks!
 
   pod 'Moya/RxSwift'
+  pod 'SWXMLHash', '~> 5.0.0'
+
   
 end

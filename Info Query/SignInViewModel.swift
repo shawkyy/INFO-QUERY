@@ -9,16 +9,17 @@
 import Foundation
 import RxSwift
 
+enum logInScreenState {
+       case success
+       case failed
+       case loading
+   }
 class SignInViewModel {
 
-    enum SignedInState {
-        case success
-        case failed
-    }
     let disposeBag = DisposeBag()
     let dataSource:SignInDataSource
-    typealias signInUseCaseType = (String,String,SignInDataSource)->(Single<SignInResponse>)
-    let signInStateBehaviorSubjsect = BehaviorSubject<SignedInState>(value: SignedInState.failed)
+    typealias signInUseCaseType = (String,String,SignInDataSource)->(Single<String>)
+    let signInStateBehaviorSubjsect = BehaviorSubject<logInScreenState?>(value: nil)
     let signInUseCase: signInUseCaseType
    
     init(
@@ -30,12 +31,13 @@ class SignInViewModel {
     }
 
     func signIn(email:String,password:String){
-        signInUseCase(email,password,dataSource).subscribe(onSuccess: { [weak self] (response) in
-            if response.isTrue { self?.signInStateBehaviorSubjsect.onNext(SignedInState.success)
+        self.signInStateBehaviorSubjsect.onNext(logInScreenState.loading)
+        signInUseCase(email,password,dataSource).subscribe(onSuccess: { [weak self] (realPassword) in
+            if password == realPassword  { self?.signInStateBehaviorSubjsect.onNext(logInScreenState.success)
             }
-        }, onError: { (_) in
-            self.signInStateBehaviorSubjsect.onNext(SignedInState.failed)
-            }).disposed(by: disposeBag)
+        }, onError: { [weak self] (_) in
+            self?.signInStateBehaviorSubjsect.onNext(logInScreenState.failed)
+        }).disposed(by: disposeBag)
     }
 
 }
